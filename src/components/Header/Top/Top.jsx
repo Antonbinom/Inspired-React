@@ -1,10 +1,10 @@
-import Container from "../../Layout/Container/Container";
+// import Container from "../../Layout/Container/Container";
 import s from "./Top.module.scss";
-import cn from "classnames";
-import logo from "/src/assets/logo.svg";
+// import cn from "classnames";
+// import logo from "/src/assets/logo.svg";
 const Top = () => (
     <div className={s.top}>
-        <Container className={s.topContainer}>
+        {/* <Container className={s.topContainer}>
             <a className={cn(s.topLink, s.topPhone)} href="tel:89998765432">
                 8 999 876 54 32
             </a>
@@ -86,7 +86,7 @@ const Top = () => (
                     </li>
                 </ul>
             </div>
-        </Container>
+        </Container> */}
     </div>
 );
 
