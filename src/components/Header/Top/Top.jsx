@@ -40,7 +40,7 @@ const Top = () => (
                         </button>
                     </li>
                     <li className={s.topItem}>
-                        <li className={s.topLink}>
+                        <div className={s.topLink}>
                             <svg
                                 width="24"
                                 height="24"
@@ -56,10 +56,10 @@ const Top = () => (
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                        </li>
+                        </div>
                     </li>
                     <li className={s.topItem}>
-                        <li className={s.topLink}>
+                        <div className={s.topLink}>
                             <svg
                                 width="24"
                                 height="24"
@@ -82,7 +82,7 @@ const Top = () => (
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                        </li>
+                        </div>
                     </li>
                 </ul>
             </div>
