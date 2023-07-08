@@ -6,14 +6,18 @@ import Contacts from "./Contacts/Contacts";
 import Development from "./Development/Development";
 import Copyright from "./Copyright/Copytight";
 
-const Footer = () => (
-    <Container className={s.container}>
-        <Category />
-        <Social />
-        <Contacts />
-        <Development />
-        <Copyright />
-    </Container >
+const Footer = ({ list }) => (
+    <footer>
+        <Container >
+            <div className={s.container}>
+                <Category list={list} title="Католог" />
+                <Social title="Связаться с нами" />
+                <Contacts />
+                <Development />
+                <Copyright />
+            </div>
+        </Container >
+    </footer>
 )
 
 export default Footer
