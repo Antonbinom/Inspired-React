@@ -16,8 +16,8 @@ const Product = ({ id, title, description, category, price, colors, pic, materia
                 <button className={s.favorite}>
                     <Like />
                 </button>
-                <ColorList colors={colors} />
             </div>
+            <ColorList colors={colors} />
         </article>
     )
 }

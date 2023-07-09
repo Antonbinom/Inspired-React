@@ -4,11 +4,11 @@ import s from './ColorList.module.scss';
 
 export const ColorList = ({ colors }) => {
     const { colorsList } = useSelector(state => state.colors);
-    console.log(colorsList);
 
     return (
-        <ul className={s.colorsList}>
-            {colors?.map((id, i) => {
+        <ul className={s.colorList}>
+            {colors.map((id, i) => {
+                console.log(i);
                 const color = colorsList.find(color => color.id === id)
                 return <Color key={id} color={color?.code} check={!i} />
             })}
