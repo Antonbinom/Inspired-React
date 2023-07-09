@@ -14,8 +14,9 @@ const Top = () => (
             <div className={s.topNavigation}>
                 <ul className={s.topNavList}>
                     <li className={s.topItem}>
-                        <button className={s.topLink}>
+                        <a className={s.topLink}>
                             <svg
+
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
@@ -37,15 +38,15 @@ const Top = () => (
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                        </button>
+                        </a>
                     </li>
                     <li className={s.topItem}>
-                        <div className={s.topLink}>
+                        <a className={s.topLink}>
                             <svg
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
-                                fill="none"
+                                fill="currentColor"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <path
@@ -56,15 +57,15 @@ const Top = () => (
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                        </div>
+                        </a>
                     </li>
                     <li className={s.topItem}>
-                        <div className={s.topLink}>
+                        <a className={s.topLink}>
                             <svg
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
-                                fill="none"
+                                fill="currentColor"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <path
@@ -82,7 +83,7 @@ const Top = () => (
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                        </div>
+                        </a>
                     </li>
                 </ul>
             </div>

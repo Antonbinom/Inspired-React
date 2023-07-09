@@ -9,10 +9,10 @@ const list = [
         title: 'Женщины',
         categories: [
             { link: 'bras', title: 'Бюстгалтеры' },
-            { link: 'socks ', title: 'Трусы' },
-            { link: 'bathrobes', title: 'Носки' },
-            { link: 'thermal', title: 'Халаты' },
-            { link: 'underwear', title: 'Термобелье' },
+            { link: 'underwear ', title: 'Трусы' },
+            { link: 'socks', title: 'Носки' },
+            { link: 'robe', title: 'Халаты' },
+            { link: 'thermal', title: 'Термобелье' },
             { link: 'pajamas', title: 'Пижамы' },
         ],
     },
@@ -20,10 +20,10 @@ const list = [
         link: 'men',
         title: 'Мужчины',
         categories: [
-            { link: 'socks ', title: 'Трусы' },
-            { link: 'bathrobes', title: 'Носки' },
-            { link: 'thermal', title: 'Халаты' },
-            { link: 'underwear', title: 'Термобелье' },
+            { link: 'underwear ', title: 'Трусы' },
+            { link: 'socks', title: 'Носки' },
+            { link: 'robe', title: 'Халаты' },
+            { link: 'thermal', title: 'Термобелье' },
         ],
     }
 
@@ -31,11 +31,11 @@ const list = [
 
 const Root = () => (
     <>
-        <Header list={list} />
+        <Header />
         <Main>
             <Outlet />
         </Main>
-        <Footer list={list} />
+        <Footer />
     </>
 )
 

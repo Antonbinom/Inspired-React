@@ -6,11 +6,11 @@ import Contacts from "./Contacts/Contacts";
 import Development from "./Development/Development";
 import Copyright from "./Copyright/Copytight";
 
-const Footer = ({ list }) => (
+const Footer = () => (
     <footer>
         <Container >
             <div className={s.container}>
-                <Category list={list} title="Католог" />
+                <Category title="Католог" />
                 <Social title="Связаться с нами" />
                 <Contacts />
                 <Development />

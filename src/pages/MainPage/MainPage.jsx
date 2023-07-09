@@ -3,7 +3,6 @@ import Container from "../../components/Layout/Container/Container";
 
 const MainPage = ({ gender = 'women' }) => {
     const { category } = useParams();
-
     return (
         <Container>
             <div>MainPage {gender}</div>
