@@ -2,7 +2,7 @@ import s from "./Development.module.scss";
 const Development = () => (
     <div className={s.development}>
         <ul className={s.developmentList}>
-            <li>
+            <li className={s.link}>
                 <a href="/">Designer: Anastasia Ilina</a>
             </li>
             <li className={s.link}>

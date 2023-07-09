@@ -5,8 +5,7 @@ export const fetchNavigation = createAsyncThunk(
     'navigation/fetchNavigation',
     async () => {
         const response = await fetch(CATEGORY_URL)
-        const data = await response.json();
-        return data;
+        return await response.json();
     }
 )
 
@@ -14,9 +13,9 @@ const navigationSlice = createSlice({
     name: 'navigation',
     initialState: {
         activeGender: 'women',
-        status: 'idle',
         categories: {},
         genderList: [],
+        status: 'idle',
         error: null
     },
     reducers: {

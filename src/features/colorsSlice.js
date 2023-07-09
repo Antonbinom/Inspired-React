@@ -5,23 +5,16 @@ export const fetchColors = createAsyncThunk(
     'colors/fetchColors',
     async () => {
         const response = await fetch(COLORS_URL)
-        const data = await response.json();
-        return data;
+        return await response.json();
     }
 )
 
 const colorsSlice = createSlice({
     name: 'colors',
     initialState: {
-        currentColor: '',
         colorsList: [],
         status: 'idle',
         error: null
-    },
-    reducers: {
-        setCurrentColor: (state, action) => {
-            state.currentColor = action.payload;
-        }
     },
     extraReducers: (builder) => {
         builder
@@ -31,7 +24,6 @@ const colorsSlice = createSlice({
             .addCase(fetchColors.fulfilled, (state, action) => {
                 state.status = 'success';
                 state.colorsList = action.payload;
-                console.log(state.colorsList);
             })
             .addCase(fetchColors.rejected, (state, action) => {
                 state.status = 'failed';
@@ -39,7 +31,5 @@ const colorsSlice = createSlice({
             })
     },
 })
-
-export const { setCurrentColors } = colorsSlice.actions;
 
 export default colorsSlice.reducer;
