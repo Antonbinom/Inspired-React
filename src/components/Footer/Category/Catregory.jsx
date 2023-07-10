@@ -13,14 +13,14 @@ const Category = ({ title }) => {
                 {genderList.map(gender => (
                     <li className={s.categoryItem} key={gender}>
                         <h3 className={s.categorySubtitle}>
-                            <NavLink className={s.link} to={gender}>
+                            <NavLink className={s.link} to={`/catalog/${gender}`}>
                                 {categories[gender].title}
                             </NavLink>
                         </h3>
                         <ul className={s.categorySublist}>
                             {categories?.[gender]?.list?.map(category => (
                                 <li key={category.slug}>
-                                    <NavLink className={s.link} to={`${gender}/${category.slug}`}>
+                                    <NavLink className={s.link} to={`/catalog/${gender}/${category.slug}`}>
                                         {category.title}
                                     </NavLink>
                                 </li>

@@ -13,7 +13,7 @@ const Gender = () => {
             {genderList.map(gender => (
                 <li className={s.item} key={gender}>
                     <NavLink className={isGenderActive(gender)}
-                        to={gender}>
+                        to={`/catalog/${gender}`}>
                         {categories[gender].title}
                     </NavLink>
                 </li>
