@@ -7,9 +7,8 @@ import { setActiveGender } from "/src/features/navigationSlice";
 import Goods from "/src/components/Goods/Goods";
 import Banner from "/src/components/Banner/Banner";
 
-
 const MainPage = () => {
-    const { gender, category } = useParams();
+    const { gender = 'women', category } = useParams();
     const dispatch = useDispatch();
     const { activeGender, categories } = useSelector(state => state.navigation);
     const genderData = categories[activeGender];
@@ -32,7 +31,7 @@ const MainPage = () => {
 
     return (
         <section>
-            <Banner data={genderData?.banner} />
+            {!category && <Banner data={genderData?.banner} />}
             <Goods
                 category={category}
                 categoryData={categoryData}
