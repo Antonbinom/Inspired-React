@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
+import { useMedia } from 'react-use';
+import { useEffect, useRef } from 'react';
 import { API_URL } from '/src/const.js';
 import Container from "/src/components/Layout/Container/Container";
 import s from './Banner.module.scss';
-import { useMedia } from 'react-use';
-import { useEffect, useRef } from 'react';
 
 const Banner = ({ data }) => {
     const bannerRef = useRef()
