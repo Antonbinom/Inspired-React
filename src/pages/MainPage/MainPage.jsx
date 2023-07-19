@@ -34,7 +34,7 @@ const MainPage = () => {
             {!category && <Banner data={genderData?.banner} />}
             <Goods
                 category={category}
-                categoryData={categoryData}
+                title={categoryData?.title}
             />
         </section>
     )

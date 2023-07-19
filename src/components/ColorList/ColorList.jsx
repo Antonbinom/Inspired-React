@@ -33,4 +33,4 @@ const ColorList = ({ colors, selectedColor, handleColorChange }) => {
         )
 }
 
-export default ColorLabel;
+export default ColorList;
