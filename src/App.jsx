@@ -7,13 +7,17 @@ import { useEffect } from "react";
 import { fetchNavigation } from "./features/navigationSlice";
 import { fetchColors } from "./features/colorsSlice";
 import ProductPage from "./pages/ProductPage/ProductPage";
+import FavoritePage from "./pages/FavoritePage/FavoritePage";
+import CartPage from "./pages/CartPage/CartPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<MainPage />} />
-      <Route path="product/:id" element={<ProductPage />} />
-      <Route path="catalog/:gender/:category?" element={<MainPage />} />
+      <Route path="/favorite" element={<FavoritePage />} />
+      <Route path="/cart" element={<CartPage />} />
+      <Route path="/product/:id" element={<ProductPage />} />
+      <Route path="/catalog/:gender/:category?" element={<MainPage />} />
 
       <Route path="*" element={<ErrorPage />} />
     </Route>
